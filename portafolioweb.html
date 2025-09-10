@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Diseñador & Desarrollador Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    
+	<!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">Portafolio Web</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-600 hover:bg-indigo-50">Inicio</a>
+                        <a href="#servicios" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Servicios</a>
+                        <a href="#portafolio" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Portafolio</a>
+                        <a href="#contacto" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Contacto</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Transformo ideas en experiencias digitales</h1>
+                    <p class="text-xl mb-8 opacity-90">Diseñador y desarrollador web especializado en crear soluciones digitales atractivas y funcionales.</p>
+                    <div class="flex space-x-4">
+                        <a href="#servicios" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Mis servicios</a>
+                        <a href="#contacto" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition duration-300">Contactar</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0" data-aos="fade-left">
+                    <img src="https://i.imgur.com/zcUncDo.png" alt="Diseño web" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Servicios Profesionales</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ofrezco soluciones digitales personalizadas para impulsar tu presencia en línea</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-lg">
+                                <i data-feather="globe" class="text-indigo-600 w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Páginas Web Estáticas</h3>
+                        <p class="text-gray-600 mb-4">Diseño y desarrollo de sitios web rápidos, seguros y optimizados para SEO, ideales para mostrar tu información de manera profesional.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Diseño responsive
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Optimización SEO
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Integración de formularios
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-lg">
+                                <i data-feather="shopping-cart" class="text-indigo-600 w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Tiendas Online</h3>
+                        <p class="text-gray-600 mb-4">E-commerce completo con pasarelas de pago, gestión de inventario y diseño optimizado para conversiones.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Integración con PayPal/Stripe
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Carrito de compras
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Panel de administración
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-lg">
+                                <i data-feather="smartphone" class="text-indigo-600 w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Menú Digital QR</h3>
+                        <p class="text-gray-600 mb-4">Solución moderna para restaurantes con menú digital accesible mediante QR, fácil de actualizar y con diseño atractivo.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Diseño personalizado
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Fácil actualización
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2 w-4 h-4"></i>
+                                Compatible con todos los dispositivos
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Section -->
+    <section id="portafolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Trabajos Recientes</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Algunos de mis proyectos más destacados</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/restaurant/640x360/1" alt="Proyecto 1" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center opacity-0 transition duration-300">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Restaurante Gourmet</h3>
+                            <p class="text-white mb-4">Menú digital QR con diseño elegante y funcional</p>
+                            <a href="#" class="text-white border-2 border-white px-4 py-2 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition duration-300">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/retail/640x360/1" alt="Proyecto 2" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center opacity-0 transition duration-300">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Tienda de Moda</h3>
+                            <p class="text-white mb-4">E-commerce con integración de pasarela de pagos</p>
+                            <a href="#" class="text-white border-2 border-white px-4 py-2 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition duration-300">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/office/640x360/1" alt="Proyecto 3" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center opacity-0 transition duration-300">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Consultoría Legal</h3>
+                            <p class="text-white mb-4">Web corporativa con diseño profesional</p>
+                            <a href="#" class="text-white border-2 border-white px-4 py-2 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition duration-300">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Ver todos los proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">¿Listo para comenzar tu proyecto?</h2>
+                    <p class="text-xl text-gray-600 mb-8">Contáctame para discutir cómo puedo ayudarte a hacer realidad tu visión digital.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                                <i data-feather="mail" class="text-indigo-600 w-5 h-5"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Correo Electrónico</h3>
+                                <p class="text-gray-600">contacto@ejemplo.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                                <i data-feather="phone" class="text-indigo-600 w-5 h-5"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Teléfono</h3>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                                <i data-feather="map-pin" class="text-indigo-600 w-5 h-5"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Ubicación</h3>
+                                <p class="text-gray-600">Ciudad, País</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <form class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Servicio de interés</label>
+                            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="web">Página Web Estática</option>
+                                <option value="ecommerce">Tienda Online</option>
+                                <option value="menu">Menú Digital QR</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex md:justify-between md:items-center">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Portafolio</h3>
+                    <p class="text-gray-400 max-w-md">Diseñador y desarrollador web especializado en crear experiencias digitales memorables.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+                    <div>
+                        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Enlaces</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="text-gray-400 hover:text-white transition duration-300">Inicio</a></li>
+                            <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Servicios</a></li>
+                            <li><a href="#portafolio" class="text-gray-400 hover:text-white transition duration-300">Portafolio</a></li>
+                            <li><a href="#contacto" class="text-gray-400 hover:text-white transition duration-300">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Servicios</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Páginas Web</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Tiendas Online</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Menús QR</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Diseño Personalizado</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Redes</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-sm text-center">© 2023 Portafolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'hidden md:hidden fixed inset-0 bg-white z-50 pt-20 px-4';
+        mobileMenu.innerHTML = `
+            <div class="flex flex-col space-y-4">
+                <a href="#inicio" class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Inicio</a>
+                <a href="#servicios" class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Servicios</a>
+                <a href="#portafolio" class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Portafolio</a>
+                <a href="#contacto" class="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50">Contacto</a>
+                <button class="mobile-menu-close absolute top-4 right-4 p-2 rounded-md text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+        `;
+        
+        mobileMenuButton.addEventListener('click', () => {
+            document.body.appendChild(mobileMenu);
+            mobileMenu.classList.remove('hidden');
+            feather.replace();
+            
+            const closeButton = mobileMenu.querySelector('.mobile-menu-close');
+            closeButton.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links with AOS refresh
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Add fade-out effect to current section
+                    document.querySelectorAll('section').forEach(section => {
+                        section.style.opacity = '0';
+                        section.style.transition = 'opacity 300ms ease-out';
+                    });
+
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // After scroll completes, fade in and refresh AOS
+                    setTimeout(() => {
+                        document.querySelectorAll('section').forEach(section => {
+                            section.style.opacity = '1';
+                        });
+                        AOS.refreshHard(); // Force refresh animations
+                    }, 500);
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
